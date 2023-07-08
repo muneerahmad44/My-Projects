@@ -1,0 +1,318 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdio.h>
+#define opt1 1
+#define opt2 0
+//#define nursery a
+float per=0;
+void percentage(void);
+void grades(void);
+
+int main()
+{
+	char num,chr;
+	int a,c,d,e,f,g,h,l,m,n,o,p,y,z;
+	printf("Enter 95 For Class Nursery:\n");
+	printf("Enter 96 For Class KG:\n");
+	printf("Enter 1 For Class Ist:\n");
+	printf("Enter 2 For Class 2nd:\n");
+	printf("Enter 3 For Class 3rd:\n");
+	printf("Enter 4 For Class 4th:\n");
+	printf("Enter 5 For Class 5th:\n");
+	printf("Enter 6 For Class 6th:\n");
+	printf("Enter 7 For Class 7th:\n");
+	printf("Enter 8 For Class 8th:\n");
+	printf("Enter 9 For Class 9th:\n");
+	printf("Enter 10 For Class 10th:\n");
+	printf("Enter 11 For Class 11th:\n");
+	
+scanf("%d",&num);
+scanf("%c",&chr);
+switch(num)
+{
+case 95:
+printf("You can count the percentage by pressing 1 and grades by pressing b of 0 Nursery class Student:"); 
+scanf("%d",&a);
+if(a==opt1)
+	percentage();
+else if(a==opt2)
+		grades();
+     else
+     printf("You have Enetred wrong choice");
+     break;
+ 
+
+     case 96:
+     	
+     	printf("You can count the percentage by pressing 1 and grades by pressing 0 of a kg class Student:"); 
+     scanf("%d",&c);
+     if(c==opt1)
+     	percentage();
+     	else if(c==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     break;
+     	case 1:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 1st class Student:"); 
+       scanf("%d",&d);
+       if(d==opt1)
+     	percentage();
+     	else if(d==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	
+     	case 2:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 2nd Student:"); 
+           scanf("%d",&e);
+           if(e==opt1)
+     	percentage();
+     	else if(e==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 3:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 3rd Student:"); 
+          scanf("%d",&f);
+          if(f==opt1)
+     	percentage();
+     	else if(f==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 4:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 4th Student:"); 
+         scanf("%d",&g);
+         if(g==opt1)
+     	percentage();
+     	else if(g==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 5:
+     		printf("You can count the percentage by pressing 0 and grades by pressing 1 of a class 5th Student:"); 
+         scanf("%d",&h);
+         if(h==opt1)
+     	percentage();
+     	else if(h==opt2)
+     		grades();
+     	else
+     	printf("You have Entered wrong choice");
+     	break;
+     	case 6:
+     			printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 6th Student:"); 
+         scanf("%d",&l);
+         if(l==opt1)
+     	percentage();
+     	else if(l==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 7:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of class 7th Student:"); 
+         scanf("%d",&m);
+         if(m==opt1)
+     	percentage();
+     	else if(m==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 8:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of class 8th Student:"); 
+         scanf("%d",&n);
+         if(n==opt1)
+     	percentage();
+     	else if(n==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 9:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of class 9th Student:"); 
+         scanf("%d",&o);
+         if(o==opt1)
+     	percentage();
+     	else if(o==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	case 10:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 10th Student:"); 
+         scanf("%d",&p);
+         if(p==opt1)
+     	percentage();
+     	else if(p==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     		case 11:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 11th Student:"); 
+         scanf("%d",&y);
+         if(y==opt1)
+     	percentage();
+     	else if(y==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     		case 12:
+     		printf("You can count the percentage by pressing 1 and grades by pressing 0 of a class 12th Student:"); 
+         scanf("%d",&z);
+         if(z==opt1)
+     	percentage();
+     	else if(z==opt2)
+     		grades();
+     	else
+     	printf("You have entered wrong choice");
+     	break;
+     	
+     	default:
+     		printf(" The grading system does not support the class:");
+}
+
+return 0;
+}
+void percentage(void)
+{
+int i,j,row,col,a=0,n,b=0;//b for minmizng highest marks in a single subject
+float max,maxx;
+float sum=0;
+int  over_all_marks;
+
+
+ //for names
+//printf("\nHow long is the Name of the student Please Enter:");
+//scanf("%d",&a);
+char name[50];
+printf("\nEnter The name of the Student(use underscore intead of white space):\n");
+scanf("%s",name);
+
+
+	printf("\nEnter no of subjects:");
+scanf("%d",&n);
+char subject[n][50];
+float p[n];
+
+max=p[0];
+printf("\nEnter a  number if you want to minimize the total marks of a single subject other wise enter zero if want 100 as maxium marks:\n");
+scanf("%d",&b);
+over_all_marks=n*(100-b); //Assume that highest marks in a single a subject is 100
+
+printf("\nPlease Enter the names and  marks of the subjects of %s:\n",name);
+for(i=0;i<n;i++)
+{
+	scanf("%s",subject[i]);
+	scanf("%f",&p[i]);
+	if(p[i]<=(100-b))
+	{
+		sum=sum+p[i];
+		if(p[i]>max)
+		max=p[i];
+	}
+}
+//printf("%d")
+
+per=(sum*100)/over_all_marks;
+printf("\nThe percentage of the %s is:%f",name,per);
+for(j=0;j<n;j++)
+{
+	if(p[j]<=(100-b))
+	{
+	p[j]=(p[j]*100)/(100-b);
+	printf("\nPercentage in %s %f",subject[j],p[j]);
+	}
+	else
+	printf("\nSorry the marks you have entered of %s exceeds the limit of maximum marks",subject[j]);
+}	
+//main(name);
+	printf("\nThe maximum Marks in the papers is %f",max);
+}
+void grades(void)
+{
+	int i,j,row,col,a=0,n,b=0;//b for minmizng highest marks in a single subject
+float max,maxx;
+float sum=0;
+int  over_all_marks;
+
+
+ //for names
+//printf("\nHow long is the Name of the student Please Enter:");
+//scanf("%d",&a);
+char name[50];
+printf("\n Enter The name of the Student(use underscore instead of white space):\n");
+scanf("%s",name);
+
+
+	printf("\nEnter no of subjects:");
+scanf("%d",&n);
+char subject[n][50];
+float p[n];
+
+max=p[0];
+printf("\nEnter a number if you want to minimize the total marks of a single subject other wise enter zero if want 100 as maxium marks:");
+scanf("%d",&b);
+over_all_marks=n*(100-b); //Assume that highest marks in a single a subject is 100
+
+printf("\nPlease Enter the names and marks of the subjects of %s:\n",name);
+for(i=0;i<n;i++)
+{
+	scanf("%s",subject[i]);
+	scanf("%f",&p[i]);
+	max=p[0];
+	if(p[i]<=(100-b))
+	{
+		sum=sum+p[i];
+	
+		//else 
+		//printf("Unable to calculate your percentage as your ");
+		if(p[i]>max)//if i want to print the maximum marks this is for that
+		max=p[i];
+	}
+}
+//printf("%d")
+//printf("\n%f",sum);
+
+per=(sum*100)/over_all_marks;
+
+printf("\nThe percentage of the %s is:%f",name,per);
+for(j=0;j<n;j++)
+{
+	if(p[j]<=(100-b))
+	{
+	p[j]=(p[j]*100)/(100-b);
+	printf("\nPercentage in %s %f",subject[j],p[j]);
+	//max=p[0];
+	//if(p[i]>max)
+	//max=p[i];
+	}
+	else
+	printf("\nSorry the marks you have entered of %s exceeds the limit of maximum marks",subject[j]);
+}	
+//main(name);
+	printf("\nThe maximum marks in the papers is %f",max);
+	if(per>=90&&per<=100)
+	printf("\n%s got Grade A",name);
+	else if(per>=80&&per<90)
+	printf("\n%s got Grade B",name);
+	else if(per>=70&&per<80)
+	printf("\n%s got Grade C",name);
+	else if(per>=60&&per<70)
+	printf("\n%s got Grade D",name);
+	else if(per>=50&&per<60)
+	printf("\n%s got Grade E",name);
+	else 
+	printf("\nFail");
+	
+	
+	
+	
+}
